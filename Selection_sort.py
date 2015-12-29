@@ -14,9 +14,14 @@ def sel_sort(L):
                 min_index = j
                 min_value = L[j]
             j+=1
-        temp = L[i]
-        L[i] = min_value
-        L[min_index] = temp       
+            
+        #   Regular swapping procedure
+        #   temp = L[i]
+        #   L[i] = min_value
+        #   L[min_index] = temp
+
+        # Modified swapping
+        L[min_index],L[i] = L[i],L[min_index]
  
 
 L = [5,4,3,0,7,2,9]
