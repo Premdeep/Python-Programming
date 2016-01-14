@@ -34,3 +34,12 @@ def GcdRec1(a,b):
         return x
     else:
         return GcdRec1(x,y%x)
+
+
+# Finding GCD with another recursion method
+
+def GcdRec2(a,b):
+    if a == b or b == 0:
+        return a
+    else:
+        return GcdRec2(b,a%b)
